@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sidebar Navigation Tugas</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Nunito+Sans" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito Sans', serif;
+            font-size: 16px;
+            margin: 0 
+        }
+
+        .sidebar {
+            float: left;
+            background: turquoise;
+            width: 15%;
+            height: 800px;
+        }
+
+        .paragraf {
+            float: right;
+            width: 83%;
+            text-align: justify;
+            padding-right: 7px
+        }
+        ul {
+            list-style: none;
+            padding: 0; /*untuk menghilangkan jarak tab list*/
+            margin: 0; /*untuk menghilangkan jarak tab list*/
+        }
+        
+        li::before {
+            content: "• ";
+            color:rgb(127, 192, 192); /* merubah bullets list */
+        }
+
+        #warna {
+            color: turquoise
+        }
+        .warna2 {
+            color: skyblue
+        }
+    </style>
+
+</head>
+<body>
+    <div class="sidebar">
+        <center>
+        <h1>Click & Go</h1>
+        <p><a href="https://google.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" width="60"></a></p>
+        <br>
+        <p><a href="https://purwadhika.com" target="_blank"><img src="https://cdn.evbuc.com/images/15706094/150602629173/3/logo.png" width="60"></a></p>
+        <br>
+        <p><a href="https://youtube.com" target="_blank"><img src="http://downloadfreesvgicons.com/icons/social-media-icons/svg-youtube-logo-icon-1/svg-youtube-logo-icon-1.svg" width="80"></a></p>
+        <br>
+        <p><a href="https://facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" width="60"></a></p>
+        </center>
+    </div>
+    <div class="paragraf">
+        <h1>SIDEBAR NAVIGATION LAYOUT</h1>
+        <h2>Bagaimana saya membuat halaman ini?</h2>
+        <b>09 Mei 2018 - CSS LAYOUT</b>
+        <br>Salah satu tugas pada materi ini ialah membuat <i><b>Sidebar Navigation Layout</b></i>, dimana tampilannya seperti
+        teman-teman lihat saat ini. Saya membuat <i>Sidebar Navigation Layout</i> ini menggunakan <i>property <b>Float Left & Float Right</b></i>.
+        <i>Float Left</i> digunakan untuk membuat navigation pada sisi kiri & <i>Float Right</i> untuk membuat sisi kanan yang berisi content.
+        <i>Float Left</i> dan <i>Float Right</i> hanya bisa digunakan untuk membagi halaman menjadi 2 layout (kanan dan kiri). Jika teman-teman ingin membagi
+        halaman menjadi 3 atau lebih, sebaiknya gunakan cara lain. 
+        <br>Contohnya, pada tugas 3 kolom saya menggunakan <i><b>columnn-count</b></i> pada CSS
+        <br>          
+
+        <div class="paragraf2">
+        <h2>Float Left Content</h2>
+            <ul>
+                <li>Dibuat di dalam tag  &lt;div&gt; dengan <i>class</i> "sidebar" untuk kebutuhan <i>styling</i></li>
+                <li>Pada CSS <i>class</i> "sidebar" diberikan <i>property</i> <i class="warna2">float: left;</i> dengan <i class="warna2">width="15%"</i> dari halaman</li>
+                <li>Menggunakan tag &lt;center&gt; untuk membuat seluruh <i>content</i> berada di tengah</li>
+                <li>Background &nbsp;&emsp;&emsp;: pada css <i>class</i> "sidebar" <i>property background</i> dengan warna <i id="warna"><b>turquoise</b></i></li>
+                <li>Click & Go &emsp;&emsp;&emsp;: dibuat dengan tag &lt;h1&gt; agar ukuran besar & bold</li>
+                <li>Link on Image &emsp;&nbsp;: dengan tag &lt;a href="url"&gt; berikan tag &lt;img&gt; untuk menambahkan logo, maka <i>link</i> akan terbuka pada saat user klik logo tersebut&lt;/a&gt; </li>
+                <li>Ukurang logo di <i>adjust</i> menggunakan <i>property width</i>="dengan satuan px"</li>
+            </ul>
+        </div>
+
+        <div class="paragraf3">
+        <h2>Float Right Content</h2>
+            <ul>
+                <li>Dibuat di dalam tag  &lt;div&gt; dengan <i>class</i> "paragraf" untuk kebutuhan <i>styling</i></li>
+                <li>Pada CSS <i>class</i> "paragraf" diberikan <i>property</i> <i class="warna2">float: right;</i> dengan <i class="warna2">width="83%"</i> dari halaman</li>
+                <li>Pada CSS <i>class</i> "paragraf" diberikan <i>property</i> <i id="warna2">text-align: justify</i> > text rata kanan & kiri</li>
+                <li>Membuat beberapa paragraf mengenai bagaimana halaman ini dibuat dengan tag &lt;div&gt; & beberapa tag sederhana &lt;h1&gt; &lt;h2&gt; &lt;i&gt; &lt;b&gt; &lt;br&gt; </li>
+                <li>Untuk membuat <i>list</i>, saya menghilangkan <i>default bullet</i> dan menggantinya dengan <i>bullet</i> berwarna yang dibuat di dalam tag &lt;style&gt; / CSS</li>
+            </ul>
+        </div>
+        <br>
+        <p>Thankyou Purwadhika & Mr. Lintang Wisesa<br>find me on github : @dappsh</p>
+    </div>
+    
+
+
+
+</body>
+</html>
